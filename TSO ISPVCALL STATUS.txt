@@ -1,0 +1,586 @@
+========= ISPF Diagnostic Trace System ======== 2023.082 11:07:27 GMT ==========
+     Trace Date(YYYY/MM/DD): 2023/03/23
+     ZENVIR: ISPF 7.4MVS     TSO              ZOS390RL:z/OS   02.04.00
+     ZISPFOS:ISPF FOR z/OS 02.04.00
+     JES: JES3                          HSM:    ACTIVE
+     CPU: 3931(4 CPUs)                  Region: 128M
+     Max <16M: 7592K        In Use: 632K          Avail: 6960K
+     Max >16M: 131072K      In Use: 2696K         Avail: 128376K
+     Default unit:        SYSDA         Trace type:          WRITE
+     GRS Options:         ?,STAR        z/Architecture:      Yes
+     ISPF Exit Flags:     0000          Test Status:         Inactive
+     Ext data stream:     Yes           Max screen size:     080x24
+     Language:            ENGLISH       Terminal Type:       3278
+     Loaded Char set mod: ISP3278       ISPVCALL Exit:       *None*
+     TSO Prefix:          IF110X3
+     Multi-logon support: Disabled
+     ISPVCALL Version:    ISPVCALL  2018.330  z/OS 2.04 BASE
+     ISPVCALL Command: ISPVCALL STATUS
+     ISPF Invocation:  ISPSTART CMD(%RUNDBSUB SSID(DSN3) TRACE(N) ) NEWAPPL(ISR)
+     Initial APPLID:   ISR
+==============================< Cached Panels >=================================
+ISR@PRIM  SD@DB2M   FMN2PRD2  FMN2PD2E  FMN2ST00  ISRUDLP
+          ISR@PRIM  ISR@PRIM
+==========================< Active Command Tables >=============================
+          FMCCMDS   ISPCMDS
+======================< Entries in Open Command Tables >========================
+   FMCCMDS
+     FM       0 SELECT CMD(%FMMENU)
+   ISPCMDS
+     BACKWARD 0 ALIAS UP
+     BOTTOM   0 ALIAS DOWN MAX
+     FORWARD  0 ALIAS DOWN
+     TOP      0 ALIAS UP MAX
+     ACTIONS  0 ACTIONS
+     AUTOTYPE 0 SETVERB
+     CANCEL   3 CANCEL
+     CMDE     0 SELECT PGM(ISPCCMDE) SUSPEND
+     COLOR    0 SELECT PGM(ISPOPT) PARM(ISPOPT10) SCRNAME(SETTINGS)
+     CRETRIEV 0 CRETRIEV
+     CUAATTR  0 SELECT PGM(ISPOPT) PARM(ISPOPT11) SCRNAME(SETTINGS)
+     CURSOR   0 CURSOR
+     DDLIST   0 SELECT PGM(ISRDDN) NEWAPPL(ISR) SUSPEND SCRNAME(DDLIST)
+                PARM(&ZPARM)
+     DOWN     0 SETVERB
+     DSLIST   0 SELECT PGM(ISRDSLST) PARM(DSL &ZPARM) SUSPEND SCRNAME(DSLIST)
+     DTEST    0 SELECT PGM(ISPYDTST) PARM(&ZPARM) NOFUNC SCRNAME(DTEST)
+     END      0 SETVERB
+     ENVIRON  0 SELECT PGM(ISPENV) PARM(&ZPARM) SCRNAME(SETTINGS)
+     EPDF     0 SELECT CMD(%ISREPDF &ZPARM) NEWAPPL(ISR) SUSPEND
+     EXHELP   0 SELECT PGM(ISPTUTOR) PARM(&ZPARM) NOFUNC SCRNAME(HELP)
+     EXIT     0 EXIT
+     EXPAND   0 SETVERB
+     FKA      0 SELECT PGM(ISPOPF) PARM(FKA,&ZPARM) NOFUNC SUSPEND
+     HELP     0 SELECT PGM(ISPTUTOR) PARM(&ZPARM) NOFUNC SCRNAME(HELP)
+     INT      0 SELECT PGM(ISRINT) PARM(POP) SUSPEND SCRNAME(TOOLINT)
+     ISPDPTRC 0 SELECT SUSPEND SCRNAME(PNLTRC) CMD(ISPDPTRC &ZPARM)
+     ISPDTLC  0 SELECT SUSPEND MODE(FSCR) SCRNAME(DTL) CMD(%ISPDTLC &ZPARM)
+     ISPFTTRC 0 SELECT SUSPEND SCRNAME(FTTRACE) CMD(ISPFTTRC &ZPARM)
+     ISPFVAR  0 SELECT PGM(ISPOPT) PARM(&ZPARM)
+     ISPFWORK 0 SELECT PGM(ISRUDA) PARM(ISRWORK) SUSPEND SCRNAME(WORK)
+     ISPLIBD  0 SELECT PGM(ISPLLS) PARM(&ZPARM) SCRNAME(LIBDEF)
+     ISPPREP  0 SELECT PGM(ISPPREP) NEWAPPL SUSPEND SCRNAME(PREP)
+     ISPVCALL 0 SELECT SUSPEND SCRNAME(VCALL) CMD(ISPVCALL &ZPARM)
+     ISRRLIST 0 SELECT PGM(ISRDSLST) PARM(&ZPARM) SUSPEND
+     ISRROUTE 0 SELECT PGM(ISRRCL) PARM(&ZPARM) SUSPEND
+     KEYLIST  0 SELECT PGM(ISPKLU) PARM(&ZPARM) SCRNAME(SETTINGS)
+     KEYS     0 SELECT PGM(ISPOPT) PARM(ISPOPT3) SUSPEND SCRNAME(SETTINGS)
+     KEYSHELP 0 SELECT PGM(ISPTUTOR) PARM(&ZPARM) NOFUNC SCRNAME(HELP)
+     LEFT     0 SETVERB
+     LIST     0 SELECT PGM(ISPLLP) PARM(LIST &ZPARM) SUSPEND SCRNAME(SETTINGS)
+     LOG      0 SELECT PGM(ISPLLP) PARM(LOG &ZPARM) SUSPEND SCRNAME(SETTINGS)
+     MSGID    0 SELECT PGM(ISPOMI) PARM(&ZPARM) NOFUNC
+     NOP      0 NOP
+     NRETRIEV 0 SETVERB
+     PANELID  0 SELECT PGM(ISPOPI) PARM(&ZPARM) NOFUNC
+     PFSHOW   0 SELECT PGM(ISPOPF) PARM(PFK,&ZPARM) NOFUNC SUSPEND
+                SCRNAME(SETTINGS)
+     PRINT    0 PRINT
+     PRINT-HI 0 PRINT-HI
+     PRINTG   0 PRINTG
+     PRINTL   0 PRINTL
+     PRINTLHI 0 PRINTLHI
+     PSCOLOR  0 SELECT PGM(ISPOPT) PARM(ISPOPT1X) SCRNAME(SETTINGS)
+     RCHANGE  0 SETVERB
+     REFACTD  0 SELECT PGM(ISRDSLST) PARM(PL1 &ZPARM) SUSPEND
+     REFACTL  0 SELECT PGM(ISRDSLST) PARM(LL1 &ZPARM) SUSPEND
+     REFADDD  0 SELECT PGM(ISRRSLST) PARM(PLA &ZPARM)
+     REFADDL  0 SELECT PGM(ISRRSLST) PARM(LLA &ZPARM)
+     REFLISTD 0 SELECT PGM(ISRDSLST) PARM(PL1 REFLIST &ZPARM) SUSPEND
+     REFLISTL 0 SELECT PGM(ISRDSLST) PARM(LL1 REFLIST &ZPARM) SUSPEND
+     REFOPEND 0 SELECT PGM(ISRDSLST) PARM(PL2) SUSPEND
+     REFOPENL 0 SELECT PGM(ISRDSLST) PARM(LL2) SUSPEND
+     RETF     0 RETF
+     RETP     0 RETP
+     RETRIEVE 0 RETRIEVE
+     RETURN   0 SETVERB
+     RFIND    0 SETVERB
+     RIGHT    0 SETVERB
+     SAREA    0 SELECT PGM(ISPSAM) PARM(POP)
+     SCRNAME  0 SCRNAME
+     SETTINGS 0 SELECT PGM(ISPISM) SUSPEND SCRNAME(SETTINGS)
+     SHRPROF  0 SELECT PGM(ISPISS) PARM(&ZPARM) SCRNAME(SETTINGS)
+     SPLIT    0 SPLIT
+     SPLITV   0 SPLIT-V
+     START    0 SELECT PGM(ISPSTRT) PARM(&ZPARM)
+     SWAP     0 SWAP
+     SWITCH   3 SELECT PGM(ISPWSCD) PARM(SWITCH,&ZPARM)
+     SYSNAME  0 SYSNAME
+     SWAPBAR  0 SELECT PGM(ISPTL) PARM(&ZPARM)
+     TSO      0 SELECT SUSPEND CMD(&ZPARM)
+     TSOCMD   0 SELECT PGM(ISRRCL) PARM(C1) SUSPEND SCRNAME(CMD)
+     TSOGUI   0 SELECT PGM(ISPISM) PARM(TSOGUI,&ZPARM)
+     TUTOR    0 SELECT PGM(ISPTUTOR) PARM(&ZPARM) SCRNAME(HELP)
+     UP       0 SETVERB
+     USERID   0 USERID
+     UDLIST   0 SELECT PGM(ISRDSLST) PARM(UDL &ZPARM) SUSPEND SCRNAME(UDLIST)
+     WINDOW   0 WINDOW
+     WS       0 WS
+     WSCON    0 SELECT PGM(ISPWSCD) PARM(WSCON,PANEL)
+     WSDISCON 6 SELECT PGM(ISPWSCD) PARM(WSDISCON,&ZPARM)
+     ZCLRSFLD 0 SETVERB
+     ZEXPAND  0 SETVERB
+     ZKEYS    0 SELECT PGM(ISPOPT) PARM(ISPOPT3F) SUSPEND SCRNAME(SETTINGS)
+============================< Entries in ISPTCM >===============================
+   ID=ISPTCM    DATE= 01/21/20  No of entries= 0125
+     E=          F= 61       E= ACCOUNT  F= 02       E= ALLOC    F= 02
+     E= ALLOCATE F= 02       E= ALTER    F= 22       E= ALTLIB   F= 02
+     E= APL2     F= 42       E= ASM      F= 02       E= ATTR     F= 02
+     E= ATTRIB   F= 02       E= BIX      F= 02       E= BLDINDEX F= 02
+     E= CALC     F= 02       E= CALL     F= 42       E= CANCEL   F= 02
+     E= CNVTCAT  F= 22       E= COB      F= 02       E= COBOL    F= 02
+     E= CON      F= 02       E= CONVERT  F= 02       E= DEF      F= 22
+     E= DEFINE   F= 22       E= DEL      F= 22       E= DELETE   F= 22
+     E= DSPRINT  F= 02       E= DWKGISC0 F= 42       E= E        F= 02
+     E= EDIT     F= 02       E= END      F= 02       E= EX       F= 02
+     E= EXEC     F= 02       E= EXECUTIL F= 02       E= EXP      F= 22
+     E= EXPORT   F= 22       E= EXPORTRA F= 02       E= FLMCMD   F= 42
+     E= FLMLNK   F= 42       E= FLMS$LNK F= 42       E= FLMS7C   F= 42
+     E= FORT     F= 02       E= FREE     F= 02       E= GOFORT   F= 42
+     E= H        F= 02       E= HELP     F= 02       E= IMP      F= 22
+     E= IMPORT   F= 22       E= IMPORTRA F= 02       E= ISPF     F= 08
+     E= ISPSTART F= 08       E= ISRDDN   F= 42       E= ISREDIT  F= 42
+     E= ISRPLKWD F= 40       E= LINK     F= 02       E= LISTA    F= 02
+     E= LISTALC  F= 02       E= LISTB    F= 22       E= LISTBC   F= 22
+     E= LISTC    F= 02       E= LISTCAT  F= 02       E= LISTCRA  F= 02
+     E= LISTD    F= 22       E= LISTDS   F= 22       E= LISTR    F= 02
+     E= LOAD     F= 02       E= LOADGO   F= 42       E= LOGOFF   F= 08
+     E= LOGON    F= 08       E= MPRA     F= 02       E= OMVS     F= E1
+     E= OPER     F= 82       E= OPERATOR F= 82       E= OUT      F= 02
+     E= OUTDES   F= 02       E= OUTPUT   F= 02       E= PARMLIB  F= 22
+     E= PDF      F= 08       E= PLI      F= 02       E= PLIC     F= 42
+     E= PR       F= 02       E= PRINT    F= 22       E= PRINTDS  F= 02
+     E= PROF     F= 02       E= PROFILE  F= 02       E= PROT     F= 12
+     E= PROTECT  F= 12       E= R        F= 42       E= RCAT     F= 02
+     E= RECEIVE  F= 22       E= REN      F= 02       E= RENAME   F= 02
+     E= REPRO    F= 22       E= RESETCAT F= 02       E= RUN      F= 42
+     E= SCRIPT   F= 02       E= SE       F= 22       E= SEND     F= 22
+     E= SMC      F= 02       E= SMCOPY   F= 02       E= SMF      F= 02
+     E= SMFIND   F= 02       E= SMP      F= 02       E= SMPUT    F= 02
+     E= SPF      F= 08       E= ST       F= 02       E= STATUS   F= 02
+     E= SUB      F= 02       E= SUBMIT   F= 02       E= TELNET   F= E1
+     E= TERM     F= 02       E= TERMINAL F= 02       E= TEST     F= 08
+     E= TESTA    F= 22       E= TESTAUTH F= 22       E= TESTCOB  F= 42
+     E= TESTFORT F= 42       E= TIME     F= 02       E= TRANSMIT F= 22
+     E= TSOEXEC  F= 02       E= TSOLIB   F= 02       E= UNALLOC  F= 02
+     E= VERIFY   F= 22       E= VFY      F= 22       E= VLFNOTE  F= 22
+     E= WHEN     F= 02       E= XMIT     F= 22       E= XPRA     F= 02
+===========================< Module Load Origins >==============================
+     ISPCFIGU:LLAF                   SYS1.SISPLOAD
+     ISPCFIGV:Not loaded
+     ISPSUBS :LPA  LPA
+     ISRSUBS :LPA  LPA
+=========================< PDF Configuration Table >============================
+     Table id............ ISPCFIGU      Table level id...... 480R8001
+     Keyword Source...... SDMVS.INSTALL.ZOS.USERMOD.HBB77C0.HFS(ISPCONFG)
+       Compile date...... 20210511        Compile time...... 10.24
+
+     Exits
+       Allocation pgm....                 Print pgm.........
+       Compress pgm......                 Print Clist.......
+       Compress Clist....                 Dslist pgm........
+       Memlist filter....                 Dataset name chg..
+       Installation acct.                 Dslist line cmd...
+       Builtin func pgm..                 Builtin func Clist
+
+     SuperC                             Outlist
+       Use Pgm interface. YES             Block Size........ 13,566
+       List DS BlkSz..... 0               Primary blocks.... 200
+       Profile DS BlkSz.. 0               Secondary blocks.. 100
+       Update DS BlkSz... 0               Record Length..... 133
+       Stmts DS BlkSz.... 0
+       List DS Prim Blks. 50
+       List DS Sec Blks.. 100
+       Updt DS Prim Blks. 15
+       Updt DS Sec Blks.. 30
+
+     Unit name........... SYSALLDA      ICF printer support. NO
+     Use unit for TMP ds. NO            Add qual for PDF ds. NO
+     PCF being used...... NO            Use UADS only....... A
+     Max. split screens.. 8             Check exp. dates.... YES
+     Use Accounting exit. NO            TSO option 6 panel.. NO
+     Migrate Volume...... MIGRAT        Migrate Command..... HDELETE
+     Allow Browse submit. YES           Allow asm rev-video. YES
+     Allow View submit... YES           Year 2000 cutoff.... 65
+     Site cmd location... B             User command table1.
+     Site command table1. FMC           User command table2.
+     Site command table2.               User command table3.
+     Site command table3.               Enhanced mem list .. YES
+     Local Print Parms... NONUM
+     Max IEBCOPY retcode. 0             IEBCOPY copy opt.... 2
+     IEBCOPY PDS use..... 0             Warn on GDG rename.. YES
+     Show ENQ Displays... YES           Alloc target (opt33) YES
+     Pathname subst. char !             8char userid layouts WHENENAB
+
+     Language Environment runtime options:
+      TRAP(ON),ABTERMENC(ABEND),TERMTHDACT(UADUMP)
+
+     Site initial cmd table entry...
+
+     Edit settings:
+       Max edit profiles. 25            Global disable pack.
+       Max store sz(KB).. 0             Undo store sz(KB)... 0
+       SCLM Warning Level WARN          Global Linecmd Table
+       Prev Gen Save Act. NOGEN         Allow target create. YES
+       Ext stats enabled. NO            VB blank trunc warn. YES
+       TF terminate chars .:&<....      Msg if RCHANGE args. NO
+       Dflt edit act bars YES           Site initial macro..
+       Preserve VB reclen NO            Force Preserve VB rl NO
+       Allow edit hilite. YES           Dflt hilite enabled. YES
+       CUT Default Action REPLACE       PASTE Default Action KEEP
+
+       Edit Recovery DS                 Edit Clipboards
+         Block Size...... 13,680          Maximum clipboards 11
+         Primary blocks.. 40              Maximum size/4Kb.. 0
+         Secondary blocks 200
+
+       Edit Hilite
+         Hiliting........ OFF           Language............ AUTO
+         Hilite IF logic. OFF           Hilite DO/END logic. OFF
+         Match parens.... OFF           Hilite FIND strings. ON
+         Hilite cursor... ON            Hilite Asm Cont Errs YES
+       Hilite Margins
+         C Left.......... *             C Right............. *
+         PL/I Left....... *             PL/I Right.......... *
+         PL/X Left....... *             PL/X Right.......... *
+
+     New Edit Profile Settings and Overrides:
+       Member statistics. ON            Force Member stats.. NO
+       Edit Recovery..... ON            Force Edit Recovery. NO
+       Recovery Warn msg. WARN          Force Rec Warn msg.. NO
+       SETUNDO available. ON            Force SETUNDO avail. NO
+       Enable PACK....... OFF           Force Enable PACK... NO
+       Initial macro.....               Force Initial macro. NO
+
+       CAPS.............. OFF           NOTE................ ON
+       HEX mode.......... OFF           NULLS mode.......... STD
+       NUMBER............ ON            COBOL Numbers....... OFF
+       Standard Numbers.. ON            AUTONUM............. OFF
+       AUTOLIST.......... OFF           PROFILE LOCK........ UNLOCK
+       AUTOSAVE.......... ON            AUTOSAVE Prompt..... PROMPT
+
+     Ver/Rel/Mod ........ 43000
+     Tab to point&shoot . NO            Reset tab to pt & sh NO
+     Tabable action bars. YES           Reset tabable actbar NO
+     Session Manager Mode NO            Reset Sess Mgr Mode. NO
+     Jump from ldr dots.. YES           Reset Jump ldr dots. NO
+     Show split line..... YES           Reset show split.... NO
+     Long message popup.. YES           Reset LMSG popup.... NO
+     Edit PRINTDS cmd.... NO            Reset edit PRINTDS.. NO
+     Restore test/trace.. YES           Reset restore tst/tr NO
+     Panel CUA mode...... YES           Reset CUA mode...... NO
+
+
+     Action bar sel ch... 600           Reset ABSC.......... NO
+     AB separator line... 100           Reset ABSL.......... NO
+     AB unselected choice 720           Reset ABUC.......... NO
+     Action message text. 220           Reset AMT........... NO
+     Caution text........ 620           Reset CT............ NO
+     Choice entry field.. 504           Reset CEF........... NO
+     Column heading...... 120           Reset CH............ NO
+     Descriptive text.... 400           Reset DT............ NO
+     Emphasized text..... 520           Reset ET............ NO
+     Error emphasis...... 622           Reset EE............ NO
+     Field prompt........ 400           Reset FP............ NO
+     Function keys....... 100           Reset FI............ NO
+     Information msg.txt. 720           Reset IMT........... NO
+     List entry field.... 504           Reset LEF........... NO
+     List item descr..... 400           Reset LID........... NO
+     List item  ......... 700           Reset LI............ NO
+     Normal entry field.. 504           Reset NEF........... NO
+     Normal text......... 400           Reset NT............ NO
+     Panel information... 400           Reset PI............ NO
+     Panel title......... 100           Reset PT............ NO
+     PanelId............. 100           Reset PanelId....... NO
+     PD avail choice..... 700           Reset PDAC.......... NO
+     PD unavail choice... 100           Reset PDUC.......... NO
+     Reference phrase.... 720           Reset RP............ NO
+     Scroll information.. 720           Reset SI............ NO
+     Sel avail choice.... 700           Reset SAC........... NO
+     Sel unavail choice.. 100           Reset SUC........... NO
+     Var output info..... 500           Reset VOI........... NO
+     Warning msg text.... 620           Reset VOI........... NO
+     Warning text........ 220           Reset WT............ NO
+     Work area sep line.. 100           Reset WASL.......... NO
+     Point-and-shoot..... 520           Reset PS............ NO
+     ZPLACE..............               Reset ZPLACE........ NO
+     ZKLUSE ............. Y             Reset ZKLUSE........ NO
+     ZPFSHOW............. ON            Reset ZPFSHOW....... NO
+     Status area default. SES           Scroll default...... PAGE
+     Min Scroll amount... 0             Max Scroll amount... 9,999
+     ISPF Temp ds qual... &SYSNAME.
+
+     Multi-logon Profile Sharing defaults
+       M-L support....... NO            Conflict Processing
+       ENQ Lockout prompt YES             ISPSPROF.......... KEEP
+       ENQ Lock wait(ms). 1,000           ISPF Profile...... KEEP
+       ENQ Lock retries.. 1               APPLID profiles... KEEP
+                                          Reference lists... KEEP
+       Reset Settings.... NO              EDIT profiles..... KEEP
+                                          BATCH............. DISCARD
+                                          Other profiles.... KEEP
+     PDSE Reserves are:     ON
+
+     ISPF Default Lang... ENGLISH
+     Log Dataset defaults               List Dataset default
+       Log dataset blksz. 0               Recs in list blk.. 26
+       Log file disp.....                 List file disp....
+       Log file disp flg. NO              List file disp flg NO
+       Log lrecl......... 125
+
+     Temp ctl0 ds default               Temp list ds default
+       ISPCTL0 lrecl..... 80              ISPLSTx lrecl..... 121
+       ISPCTL0 blksz..... 0               ISPLSTx blksz..... 0
+       ISPCTL0 primary... 10              ISPLSTx primary... 10
+       ISPCTL0 secondary. 100             ISPLSTx secondary. 100
+
+     Temp cntl ds default               Temp work ds default
+       ISPCTLx lrecl..... 80              ISPWRKx lrecl..... 256
+       ISPCTLx blksz..... 0               ISPWRKx blksz..... 0
+       ISPCTLx primary... 10              ISPWRKx primary... 10
+       ISPCTLx secondary. 100             ISPWRKx secondary. 100
+
+     Printds option...... DEST
+     View supported...... YES           Alternate 7.1 panel. NO
+     No. of TBADD rows... 1             Retrieve cmd stack.. 512
+     ISPF exits enabled.. NO
+     XTIOT requested..... NO            NON_VSAM_XTIOT...... YES
+     XTIOT support active NO
+
+     DSLIST Removable Media Support:
+       Enable RM Support. NO
+       Tape/RM Command... %EDGRPD34
+       Tape/RM Applid.... EDG
+
+     VSAM Support:
+       Enable VSAM Edit.. NO              Limit VSAM Edit... NO
+       Enable VSAM View.. NO              Limit VSAM View... NO
+       Enable VSAM Browse NO              Limit VSAM Browse. NO
+       VSAM commands:
+         Edit:    FMNINV DSE /
+         View:    FMNINV DSV /
+         Browse:  FMNINV DSB /
+       VSAM restricted data sets:  None
+
+     Log/List defaults:
+       Log/List jobcard1...
+
+       Log/List jobcard2...
+
+       Log/List jobcard3...
+
+       Log/List jobcard4...
+
+     Log settings                       List settings
+       DS unique char.... 1               DS unique char.... 1
+       Sysout class......                 Sysout class......
+       Reset sysout...... NO              Reset sysout...... NO
+       Printer id........                 Printer id........
+       Reset printer id.. NO              Reset printer id.. NO
+       Lines per page.... 60              Lines per page.... 60
+       Pages primary..... 10              Pages primary..... 100
+       Pages secondary... 10              Pages secondary... 200
+       Display required.. N               Display required.. N
+       Keep.............. N               Keep.............. N
+       Log message id.... N               List line length.. 120
+                                          List record format FBA
+                                          List lrecl........ 121
+                                          Reset LRECL/RECFM. N
+     Unique job char.....
+
+     Settings defaults:                 Retrieve defaults:
+       Screen format..... S               Retrieve min. len. 1
+       Terminal type..... 3278            Retrieve csr pos.. 1
+       Device name.......
+       Reset device name. NO            Function keys:
+       Family printer.... 2               Pfkey prefix...... YES
+       Aspect ratio...... 0               Fka setting....... LONG
+       Pad character..... B               Number of pfkeys.. 12
+       Delimiter......... ;
+       Enable euro symbol N             Dflt LIBDEF Proc Opt UNCOND
+       Reset enable euro. NO
+       Scroll Member List YES
+       Reset Scr.Mem.List NO
+
+     General:                           Environ:
+       Char set load mod. ISP3278         Termtrac dd name.. ISPSNAP
+       Reset char loadmod NO              Enable dump....... OFF
+       Frame color_intens 68              Reset termtrac dd. NO
+       Tput buffersize... 0               Termtrac value.... OFF
+       ZDATEFD date forma DEFAULT
+       ZDATEF date format DEFAULT
+       Time separator.... D
+       Cont 3270 aft disc /
+
+     Colors:
+       Global colors.....  1234567
+       Gui global colors.   010413020306
+       Host colors.......
+       Pc colors.........
+
+     Workstation:
+      Gui appc address....
+
+      Gui appc address2...
+
+      Gui appc address3...
+
+      Gui appc address4...
+
+      Gui appc address5...
+
+      Gui close window... 1              Gui show enter key. /
+      Gui window frame... 1              Gui network........ 1
+      Gui switch......... 1              Save gui values.... Y
+      Gui tcp address....
+
+      Gui tcp address2...
+
+      Gui tcp address3...
+
+      Gui tcp address4...
+
+      Gui tcp address5...
+
+      Gui title..........
+
+
+      Host code page..... 0              Host character set. 0
+      Reset code page.... NO             Reset char. set.... NO
+      Gui accelerator.... /              Gui bckgrnd color.. 1
+      Gui download images /              Gui makepath images
+
+
+     Identifier:
+      Default message id. 1              Default panel id... 1
+      Default screen name 1              Default sysname.... 1
+      Default user ID.... 1
+
+     Workstation:
+      Download option.... 1              Dt level warning... 0
+      Browse ftp errors.. /              Create directory...
+      Download method....                Download platform..
+      Download ftp user..
+      Download ftp addr..
+
+      Download directory..
+
+      Download data set...
+     'ISP.SISPGUI'
+     Reset download ds... NO
+     Lcl Sysout Class....               Force lcl class..... NO
+     List Sysout Class...               Force list class.... NO
+     Disallow opt34 HLQ.. NO            ISPSTART dflt panel. ISP@MSTR
+===========================< DD name allocations >==============================
+Shr,Keep SYCPLX  CONLIB   SYS3.CAENDV.C.R181B.CSIQLOAD
+New,Del          FT05F001 ---------- Allocated to the terminal -----------------
+New,Del          FT06F001 ---------- Allocated to the terminal -----------------
+Shr,Keep DSC252  ISPLLIB  SYSDB2.DSN3.SSPGM
+Shr,Keep DSC257           SYSDB2.GLOBAL.LOAD
+Shr,Keep DSC275  ISPMLIB  SYSDB2.CG26K.GLOBAL.ISPMLIB
+Shr,Keep SYCRY1           SYS1.SISPMENU
+Shr,Keep SYCRY1           SYS1.DGTMLIB
+Shr,Keep SYCRY1           SYS1.DFQMLIB
+Shr,Keep DSC269  ISPPLIB  SYSDB2.CG26K.GLOBAL.ISPPLIB
+Shr,Keep SYCRY1           SYS1.SISPPENU
+Shr,Keep SYCRY1           SYS1.DGTPLIB
+Shr,Keep SYCRY1           SYS1.DFQPLIB
+Shr,Keep ULC018  ISPPROF  IF110X3.ISPPROF.V4.DATA
+Shr,Keep DSC279  ISPSLIB  SYSDB2.CG26K.GLOBAL.ISPSLIB
+Shr,Keep SYCRY1           SYS1.SISPSENU
+Shr,Keep SYCRY1           SYS1.DGTSLIB
+Shr,Keep ULC016  ISPTABL  IF110X3.ISPTLIB.DATA
+Shr,Keep ULC016  ISPTLIB  IF110X3.ISPTLIB.DATA
+Shr,Keep DSC268           SYSDB2.CG26K.GLOBAL.ISPTLIB
+Shr,Keep SYCRY1           SYS1.SISPTENU
+Shr,Keep SYCRY1           SYS1.DGTTLIB
+Mod,Keep SMC011  ISP04451 IF110X3.SYC3.SPFLOG2.LIST
+New,Del          ISRLDUMY NULLFILE (Dummy)
+Shr,Keep         OSJOB    NULLFILE (Dummy)
+Shr,Keep DSC272  SYSEXEC  SYSDB2.DSN3.TOOLS.EXEC.FB
+Shr,Keep DSC269           SYSDB2.CG26K.GLOBAL.EXEC.FB
+Shr,Keep SYCRY1           SYS1.SISPEXEC
+Shr,Keep SYCRY1           SYS1.SBPXEXEC
+New,Del          SYSIN    ---------- Allocated to the terminal -----------------
+New,Del          SYSOUT   ---------- Allocated to the terminal -----------------
+New,Del          SYSPRINT ---------- Allocated to the terminal -----------------
+Shr,Keep DSC270  SYSPROC  SYSDB2.CG26K.GLOBAL.CLIST
+Shr,Keep SYCPLX           SYS3.ISPF.C.Z24.RSU2207.CMDPROC
+New,Keep SMC010  SYS00124 IF110X3.ISPVCALL.TRACE
+==========================< Initial TCB structure >=============================
+    007FD520......................................... IEAVAR00 907E0000
+      007FED90....................................... IEFSD060 9095D958
+        007E0AA0..................................... IKJEFT01 9175D000
+          007E05E0................................... IKJEFT02 9176D000
+            007E0350................................. IKJEFT09 91786000
+              007E01B8............................... ISPMAIN  9402EFC0
+                007BA3D0............................. ISPTASK  942E70D8
+                  0078A028........................... ISPVCALL 80059C28
+      007FF068....................................... IEAVTSDT 90D0FF70
+==============================< LIBDEF status >=================================
+  ISPPLIB                      * LIBDEF not active *
+  ISPMLIB                      * LIBDEF not active *
+  ISPTLIB                      * LIBDEF not active *
+  ISPSLIB                      * LIBDEF not active *
+  ISPLLIB                      * LIBDEF not active *
+  ISPTABL                      * LIBDEF not active *
+  ISPFILE                      * LIBDEF not active *
+  ISPILIB                      * LIBDEF not active *
+==========< SVC Table (entries for which names can be determined) >=============
+ 00 IECVEXCP 01 IEAVEWAT 02 IEAVEPST 04 IGVVSM24 05 IGVVSM24 0A IGVVSM24
+ 0C CSVSYNCH 0F IECVPST  10 IOSPURGA 21 IGC0003C 25 IGC037   2B IGC043
+ 2C IGC044   2D IGC037   2E IGC046   2F IGC046   30 ISGGRT   38 ISGGRT
+ 3C IGC060   3E IGC062   4F IGC079   5C IECVEXCP 5F IRARMINT 6B IEAVMODE
+ 6F IGC111   70 IAXPS    71 IAXPS    72 IECVEXCP 75 IGC117   77 IEAVTST1
+ 78 IGVVSM31 79 IGC121   7B IGC123   7C ISTAPC22 7D IEAVEVT0 8A IAXPI
+ CF IGC207   D1 IGC209
+ Extended SVC Routine Table: 6D
+ 11 IGX00017 18 IGX00024 19 IGX00025 1A IGX00026 1B IGX00027 1C IEAVTESP
+ 1D IGX00029 1E IGX00030 1F IGX00031 20 IGX00032 21 IEFDOCNL 22 IGX00034
+ 23 IGX00035 27 IGX00039 2B IGX00043 2C IGX00044 32 IEEVSVC  35 IDICSVCR
+ 37 IGX00025
+ Extended SVC Routine Table: 74
+ Extended SVC Routine Table: 7A
+ Extended SVC Routine Table: 89
+============================< ISPF command stack >==============================
+     1. TSO ISPVCALL STATUS
+     2. =x
+     3. start 3.4
+     4. =x
+     5. START J;ST
+     6. =x
+     7. start 3.4
+     8. =x
+     9. START 6
+    10. =x
+    11. display iplinfo
+    12. IND$FILE GET  'IF110X3.COMPILED' ASCII CRLF
+    13. START 6
+    14. m
+    15. start 3.4
+    16. f all v12
+    17. m
+    18. f all db2
+    19. f cobol
+================================================================================
+   Legend for column 1 in trace:
+      >SVC99 - SVC 99 parameter list  >ENQ   - Formatted ENQ/DEQ parms
+      >Msg   - TLDMMID change         >CMD   - Commands issued by ISPCAT
+      >module- Formatted ISPLINK/LINKI/ISPEXEC/EXECI including caller
+================================================================================
+                        **** Usage tips ****
+   Edit commands to show specific information:
+         Calls and returns only:
+                   X ALL '>' 1
+                   DEL ALL X
+         Non-zero return codes:
+                   X ALL ' ' 13
+                   X ALL ' 0' 12
+                   X ALL '>' 1
+                   DEL ALL X
+================================================================================
+Lv TLD# Retcd Caller Offset Date               Called   Date
+-- ---- ----- ------------- -----------------  -------- -----------------
+ 0 TLD2     0 ISPVCALL+1CA  2018.330         <-ISPCCI   2017.111-BASE z24
+ 0 TLD2       ISPVCALL*     2018.330         ->ISPCCI   2017.111-BASE z24
+
