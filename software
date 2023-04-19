@@ -8,3 +8,5 @@ Job Entry Subsystem . . . : JES3
 Language Environment. . . : V2 R4.0           
 CPU Model . . . . . . . . : 3931              
 IMS Version . . . . . . . . : V15R1M0 (As in IBM Fault Analyser)                          
+DB2 Version . . . . . . . . : V12R1M5 (DB2  - SQLLEVEL(V12R1M506))
+
