@@ -1,12 +1,12 @@
-IBM Z/OS DEBUGGER VERSION 14 RELEASE 2 MOD 7
-IBM Data Studo 4.1.4
-IBM ENTERPRISE COBOL FOR Z/OS  6.3.0 P220720
-IBM Fault Analyzer for z/OS V14R1M17 (UI80993 2022/06/14)
+IBM Z/OS DEBUGGER VERSION 14 RELEASE 2 MOD 7 [From debugger log when debugged online program SMMPRMEA]
+IBM Data Studio 4.1.4 [From Ford software store]
+IBM ENTERPRISE COBOL FOR Z/OS  6.3.0 P220720 [From program (SMMPRMEA) compilation endevor job]
+IBM Fault Analyzer for z/OS V14R1M17 (UI80993 2022/06/14) [Note:Copyright of IBM from 2000 to 2017.  Copyright of HCL from 2017 to 2022] [From selecting a program(PA0067UV) Abend information and viewing saved report]
 Operating System. . . . . : z/OS V2R4M0       
 Data Facility Product . . : DFSMS z/OS V2R4M0 
 Job Entry Subsystem . . . : JES3              
 Language Environment. . . : V2 R4.0           
 CPU Model . . . . . . . . : 3931              
-IMS Version . . . . . . . . : V15R1M0 (As in IBM Fault Analyser)                          
-DB2 Version . . . . . . . . : V12R1M5 (DB2  - SQLLEVEL(V12R1M506))
-
+DB2 Version . . . . . . . . : V12R1M5 [DB2  - SQLLEVEL(V12R1M506)]
+IMS Version . . . . . . . . : V15R1M0 (As in IBM Fault Analyser)                             
+(ISPF Level, z?OS version, Jes version, CPU info, screen size, terminal type,ISPVcall version)[From 'TSO ISPVCALL]
