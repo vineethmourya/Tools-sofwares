@@ -9,4 +9,4 @@ Language Environment. . . : V2 R4.0
 CPU Model . . . . . . . . : 3931              
 DB2 Version . . . . . . . . : V12R1M5 [DB2  - SQLLEVEL(V12R1M506)]
 IMS Version . . . . . . . . : V15R1M0 (As in IBM Fault Analyser)                             
-(ISPF Level, z?OS version, Jes version, CPU info, screen size, terminal type,ISPVcall version)[From 'TSO ISPVCALL]
+(ISPF Level, z?OS version, Jes version, CPU info, screen size, terminal type,ISPVcall version)[From 'TSO ISPVCALL']
